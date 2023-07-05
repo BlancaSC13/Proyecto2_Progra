@@ -33,6 +33,7 @@ public class BuscarLibroServlet extends HttpServlet {
             req.setAttribute("libros", listaLibros);
             req.getRequestDispatcher("/buscar_libro.jsp").forward(req,resp);
 
+
         } catch (JDOMException e) {
             throw new RuntimeException(e);
         }
